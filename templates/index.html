@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}
+<title xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">Welcome To Taskmate!</title>
+{% endblock title %}
+{% block content %}
+    <div class="container">
+    <div class="row mt-5">
+       <div class="col-lg-4">
+           <img src="{% static 'images/stickynotes.jpg' %}" alt="Notes" class="rounded-lg Shadow-sm" width="360" hight="250"></div>
+    <div class="col-lg-4">
+        <img src="{% static 'images/stickynotes-1.jpg' %}" alt="Notes" class="rounded-lg Shadow-sm" width="360" hight="250"></div>
+    <div class="col-lg-4">
+        <img src="{% static 'images/stickynotes-2.jpg' %}" alt="Notes" class="rounded-lg Shadow-sm" width="360" hight="250"></div>
+    </div>
+    </div>
+    <div class="row mt-5">
+     <div class="col-md-10 offset-md-1">
+         <center><p class="h1 text-primary">Quick And Esay To Use,Anytime,AnyWhere!</p></center>
+         <center><p class="h2">"Plan Your Day Better, Get Your Life Organized"</p></center>
+         <center><p class="h5">TASKMATE Lets You Keep Track of Your Task In One Place.</p></center>
+
+         <center><button type="button" class="btn btn-primary btn-lg mt-3">Let's Get Started</button></center>
+     </div>
+      </div>
+    </div>
+   {% endblock content %}
